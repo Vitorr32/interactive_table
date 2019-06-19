@@ -1,0 +1,41 @@
+main {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main > .title {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: gray;
+}
+
+main > .table_wrapper {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+main > .table_wrapper + .table_wrapper {
+  margin-top: 40px;
+}
+
+main > .table_wrapper > .title {
+  width: 100%;
+  background: rebeccapurple;
+  padding: 5px;
+  color: whitesmoke;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+main > .table_wrapper > .table {
+  width: 100%;
+  display: flex;
+  flex: 1;
+}

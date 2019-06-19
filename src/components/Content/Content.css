@@ -1,0 +1,24 @@
+.content_wrapper {
+  flex: 1;
+  padding: 0 20px;
+  overflow: auto;
+  border-right: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+  border-bottom-right-radius: 10px;
+}
+
+.content_wrapper .content + .content {
+  margin-top: 20px;
+}
+
+.content_wrapper > .content > .title {
+  margin: 10px auto 0px auto;
+  text-align: left;
+  color: rebeccapurple;
+}
+
+.content_wrapper > .content > .text {
+  color: gray;
+  text-align: left;
+  margin-top: 0px;
+}

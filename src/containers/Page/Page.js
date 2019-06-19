@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Content from "../../components/Content/Content";
 
+import './Page.css';
+import SideMenu from "../../components/SideMenu/SideMenu";
+
 export default class Page extends Component {
   constructor(props) {
     super(props);
@@ -8,17 +11,29 @@ export default class Page extends Component {
     this.state = {
       categories: []
     };
+
+    this.onChangeSubCategory = this.onChangeSubCategory.bind(this);
   }
 
   componentWillMount() {
     const selectedCategories = this.props.characteristic.categories.map(
       category => {
-        category.selected = category.subCategories[0];
+        category.selected = category.sub_categories[0];
         return category;
       }
     );
 
+    document.body.style.backgroundColor = this.props.characteristic.color;
+
     this.setState({ categories: selectedCategories });
+  }
+
+  onChangeSubCategory(category, sub_category) {
+    let shallow_categories = this.state.categories.slice();
+
+    shallow_categories[category].selected = shallow_categories[category].sub_categories[sub_category];
+
+    this.setState({ categories: shallow_categories });
   }
 
   render() {
@@ -28,27 +43,29 @@ export default class Page extends Component {
       return null;
     }
 
+    console.log(characteristic);
     return (
       <main>
-        <h3 className="title">{characteristic.title}</h3>
+        <h3 className="title">{characteristic.label}</h3>
+        {console.log(this.state.categories)}
 
-        {this.state.categories.map(category => {
-          return (
-            <div className="table_wrapper">
-              {category.label}
-              <div className="table">
-                <div className="menu">
-                  {category.subCategories.map(subCategory => {
-                    return <button>{subCategory.label}</button>;
-                  })}
-                </div>
-                <div className="content">
-                  <Content content={category.selected} />
-                </div>
-              </div>
+        {this.state.categories.map((category, category_index) => (
+          <div key={category.label} className="table_wrapper">
+            <h2 className="title" style={{ backgroundColor: category.color }}>{category.label}</h2>
+            <div className="table">
+              <SideMenu
+                color={category.color}
+                selected={category.selected}
+                category={category_index}
+                sub_categories={category.sub_categories}
+                callback={this.onChangeSubCategory} />
+              <Content
+                color={category.color}
+                sub_category={category.selected}
+                numberOfCategories={category.sub_categories.lenght} />
             </div>
-          );
-        })}
+          </div>
+        ))}
       </main>
     );
   }

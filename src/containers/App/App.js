@@ -26,6 +26,7 @@ export default class App extends Component {
         <header className="App-header">Header</header>
         {characteristics.map(characteristic => (
           <Page
+            key={characteristic.label}
             characteristic={characteristic}
             show={this.state.selectedCharacteristic === characteristic}
           />

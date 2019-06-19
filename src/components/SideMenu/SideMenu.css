@@ -1,0 +1,26 @@
+.side_menu {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+.side_menu button {
+  width: 250px;
+  padding: 20px 10px;
+  font-size: 28px;
+  color: whitesmoke;
+  flex: 1;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.side_menu button.selected {
+  background: whitesmoke;
+  transform: translateX(5px);
+  -webkit-box-shadow: -5px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: -5px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: -5px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
