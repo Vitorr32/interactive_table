@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Content from "../../components/Content/Content";
 
-import './Page.css';
+import "./Page.css";
 import SideMenu from "../../components/SideMenu/SideMenu";
 
 export default class Page extends Component {
@@ -31,38 +31,37 @@ export default class Page extends Component {
   onChangeSubCategory(category, sub_category) {
     let shallow_categories = this.state.categories.slice();
 
-    shallow_categories[category].selected = shallow_categories[category].sub_categories[sub_category];
+    shallow_categories[category].selected =
+      shallow_categories[category].sub_categories[sub_category];
 
     this.setState({ categories: shallow_categories });
   }
 
   render() {
-    const { characteristic, show } = this.props;
+    const { characteristic } = this.props;
 
-    if (!show) {
-      return null;
-    }
-
-    console.log(characteristic);
     return (
       <main>
         <h3 className="title">{characteristic.label}</h3>
-        {console.log(this.state.categories)}
 
         {this.state.categories.map((category, category_index) => (
           <div key={category.label} className="table_wrapper">
-            <h2 className="title" style={{ backgroundColor: category.color }}>{category.label}</h2>
+            <h2 className="title" style={{ backgroundColor: category.color }}>
+              {category.label}
+            </h2>
             <div className="table">
               <SideMenu
                 color={category.color}
                 selected={category.selected}
                 category={category_index}
                 sub_categories={category.sub_categories}
-                callback={this.onChangeSubCategory} />
+                callback={this.onChangeSubCategory}
+              />
               <Content
                 color={category.color}
                 sub_category={category.selected}
-                numberOfCategories={category.sub_categories.lenght} />
+                numberOfCategories={category.sub_categories.lenght}
+              />
             </div>
           </div>
         ))}

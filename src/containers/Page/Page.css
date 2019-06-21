@@ -36,6 +36,7 @@ main > .table_wrapper > .title {
 }
 
 main > .table_wrapper > .table {
+  position: relative;
   width: 100%;
   display: flex;
   flex: 1;

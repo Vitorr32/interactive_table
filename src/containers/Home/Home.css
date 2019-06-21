@@ -1,0 +1,15 @@
+#home {
+  text-align: center;
+  height: calc(100vh - 59.5px);
+  width: 100%;
+}
+
+#home img {
+  margin-top: 50px;
+}
+
+#home p {
+  width: 80%;
+  margin: 20px auto;
+  text-align: left;
+}

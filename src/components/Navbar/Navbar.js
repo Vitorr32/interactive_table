@@ -1,39 +1,21 @@
-import React from 'react';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import TypoGraphy from '@material-ui/core/Typography'
+import React from "react";
 
+import Navbar from "react-bootstrap/Navbar";
+import { Nav } from "react-bootstrap";
 
-function NavBar(props) {
-
-    return (
-        <List component="nav">
-            <ListItem component="div">
-                <ListItemText inset>
-                    <TypoGraphy color="inherit" variant="title">
-                        Home
-               </TypoGraphy>
-                </ListItemText>
-
-
-                <ListItemText inset>
-                    <TypoGraphy color="inherit" variant="title">
-                        Posts
-               </TypoGraphy>
-                </ListItemText>
-
-
-                <ListItemText inset>
-                    <TypoGraphy color="inherit" variant="title">
-                        Contact
-               </TypoGraphy>
-                </ListItemText>
-            </ListItem >
-
-        </List>
-    )
-}
-
-
-export default NavBar;
+export default ({ characteristics }) => (
+  <Navbar bg="dark" variant="dark">
+    <Navbar.Brand href="/home">
+      <img href={"https://via.placeholder.com/100"} alt="Placeholder" />
+    </Navbar.Brand>
+    <Nav className="mr-auto">
+      <Nav.Link href="/home">Home</Nav.Link>
+      {/* Each characteristic will generate a link to it  */}
+      {characteristics.map(characteristic => (
+        <Nav.Link key={characteristic.label} href={`/${characteristic.label}`}>
+          {characteristic.label}
+        </Nav.Link>
+      ))}
+    </Nav>
+  </Navbar>
+);
