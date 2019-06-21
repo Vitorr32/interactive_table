@@ -1,8 +1,10 @@
+
 import React, { Component } from "react";
 
 import Page from "../Page/Page";
 import characteristics from "../../resources/data/characteristics";
-
+import Navbar from 'react-bootstrap/Navbar';
+import { Nav, Form, FormControl, Button }  from 'react-bootstrap';
 import "./App.css";
 
 export default class App extends Component {
@@ -23,7 +25,15 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">Header</header>
+      <Navbar bg="dark" variant="dark">
+    <Navbar.Brand href="#about4all">Navbar</Navbar.Brand>
+    <Nav className="mr-auto"> 
+      <Nav.Link href="#about4all">About 4All</Nav.Link>
+      <Nav.Link href="#accessibility">Accessibility</Nav.Link>
+      <Nav.Link href="#usability">Usability</Nav.Link>
+    </Nav>
+  </Navbar>
+  <br />
         {characteristics.map(characteristic => (
           <Page
             key={characteristic.label}
@@ -32,6 +42,6 @@ export default class App extends Component {
           />
         ))}
       </div>
-    );
+    )
   }
 }

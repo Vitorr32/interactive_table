@@ -20,6 +20,7 @@ main > .table_wrapper {
 
 main > .table_wrapper + .table_wrapper {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 main > .table_wrapper > .title {
