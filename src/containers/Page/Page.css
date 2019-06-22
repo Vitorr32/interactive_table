@@ -1,3 +1,15 @@
+@font-face {
+  font-family: ProximaNova-ExtraBold;
+  src: url(C:\Users\Jova\Videos\interactive_table\src\resources\data\Fontes\ProximaNova-Extrabold.woff);
+}
+
+@font-face {
+  font-family: ProximaNova-Light;
+  src: url(C:\Users\Jova\Videos\interactive_table\src\resources\data\Fontes\ProximaNova-Light.woff);
+}
+
+
+
 main {
   text-align: center;
   width: 80%;
@@ -6,9 +18,13 @@ main {
 
 main > .title {
   width: 100%;
-  text-align: center;
-  padding: 10px;
-  color: gray;
+  text-align: left;
+  padding: 30px;
+  margin-top: 50px;
+  color: #555555;
+  font-size: 3em;
+  font-family: ProximaNova-ExtraBold;
+  letter-spacing: 3px;
 }
 
 main > .table_wrapper {
@@ -26,9 +42,12 @@ main > .table_wrapper + .table_wrapper {
 main > .table_wrapper > .title {
   width: 100%;
   background: rebeccapurple;
-  padding: 5px;
+  padding: 15px;
   color: whitesmoke;
   text-align: center;
+  font-family: ProximaNova-Light;
+  letter-spacing: 3px;
+  font-size: 1.5em;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin: 0 auto;
@@ -41,3 +60,4 @@ main > .table_wrapper > .table {
   display: flex;
   flex: 1;
 }
+

@@ -1,13 +1,13 @@
 const characteristics = [
     {
         //Characteristic name
-        label: 'Usabilidade',
+        label: 'USABILIDADE',
         //Background color
         color: 'whitesmoke',
         categories: [
             {
                 //Title or identifier of the category
-                label: 'Lernability',
+                label: 'LERNABILITY',
                 //Category header and label color
                 color: '#4caf50',
                 //Sub categories are objects each containing a label and the content
@@ -334,7 +334,7 @@ const characteristics = [
     },
     
     {
-        label: 'Acessibilidade',
+        label: 'ACESSIBILIDADE',
          //Background color
          color: 'whitesmoke',
         categories: [
