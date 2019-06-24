@@ -43,7 +43,6 @@ export default class Page extends Component {
     return (
       <main>
         <h3 className="title">{characteristic.label}</h3>
-
         {this.state.categories.map((category, category_index) => (
           <div key={category.label} className="table_wrapper">
             <h2 className="title" style={{ backgroundColor: category.color }}>
