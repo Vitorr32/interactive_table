@@ -3,16 +3,19 @@ import Content from "../../components/Content/Content";
 
 import "./Page.css";
 import SideMenu from "../../components/SideMenu/SideMenu";
+import Filter from "../../components/Filter/Filter";
 
 export default class Page extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      categories: []
+      categories: [],
+      selections: []
     };
 
     this.onChangeSubCategory = this.onChangeSubCategory.bind(this);
+    this.onSelectionChange = this.onSelectionChange.bind(this);
   }
 
   componentWillMount() {
@@ -37,6 +40,10 @@ export default class Page extends Component {
     this.setState({ categories: shallow_categories });
   }
 
+  onSelectionChange(selections) {
+    this.setState({ selections })
+  }
+
   render() {
     const { characteristic } = this.props;
 
@@ -56,8 +63,10 @@ export default class Page extends Component {
                 sub_categories={category.sub_categories}
                 callback={this.onChangeSubCategory}
               />
+              <Filter onSelectionChange={this.onSelectionChange} content={category.selected.content.map(content => content.title)} />
               <Content
                 color={category.color}
+                selection={this.state.selections}
                 sub_category={category.selected}
                 numberOfCategories={category.sub_categories.lenght}
               />

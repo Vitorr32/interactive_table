@@ -8,12 +8,61 @@ body {
   background: whitesmoke;
 }
 
+@font-face {
+  font-family: "Proxima Nova Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../src/resources/fonts/ProximaNova-Black.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../src/resources/fonts/ProximaNova-Bold.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Proxima Nova Extra Bold";
+  font-style: normal;
+  font-weight: bolder;
+  src: url("../src/resources/fonts/ProximaNova-Extrabold.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Proxima Nova Light";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../src/resources/fonts/ProximaNova-Light.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Proxima Nova Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../src/resources/fonts/ProximaNova-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Proxima Nova Semi Bold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../src/resources/fonts/ProximaNova-Semibold.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Proxima Nova T Thin";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../src/resources/fonts/ProximaNovaT-Thin.woff") format('woff');
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-button{
+button {
   background: none;
   border: none;
 }

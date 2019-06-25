@@ -1,12 +1,15 @@
 import React from "react";
 
+import Logo from '../../resources/images/logo-4all-white.png'
+
 import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
 
 export default ({ characteristics }) => (
-  <Navbar bg="dark" variant="dark"> 
+  <Navbar bg="dark" variant="dark">
     <Navbar.Brand href="/home">
-    <img
+      <img
+        src={Logo}
         alt="logo-4all-white"
         width="50"
         height="50"

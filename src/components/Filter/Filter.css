@@ -1,0 +1,36 @@
+.filter_wrapper {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  height: 90%;
+  background: rebeccapurple;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: calc(100% - 300px);
+  margin-right: 2.5%;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter_wrapper.hasSelection {
+  height: 20%;
+}
+
+.filter_wrapper button {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: crimson;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter_wrapper.hasSelection button {
+  width: 40px;
+  height: 40px;
+}
