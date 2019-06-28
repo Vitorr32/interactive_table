@@ -49,10 +49,15 @@ export default class Page extends Component {
 
     return (
       <main>
-        <h3 className="title">{characteristic.label}</h3>
+        <div className="lado-cor-caracteristica">
+          <h1 className="title">{characteristic.label}</h1>
+          <p>{characteristic.definition}</p>
+          <h2 className="fonte-definicao">{characteristic.font}</h2>
+        </div>
+        <div className="tabelissima">
         {this.state.categories.map((category, category_index) => (
           <div key={category.label} className="table_wrapper">
-            <h2 className="title" style={{ backgroundColor: category.color }}>
+            <h2 className="title">
               {category.label}
             </h2>
             <div className="table">
@@ -63,7 +68,7 @@ export default class Page extends Component {
                 sub_categories={category.sub_categories}
                 callback={this.onChangeSubCategory}
               />
-              <Filter onSelectionChange={this.onSelectionChange} content={category.selected.content.map(content => content.title)} />
+              <Filter onSelectionChange= {this.onSelectionChange} content={category.selected.content} />
               <Content
                 color={category.color}
                 selection={this.state.selections}
@@ -73,6 +78,7 @@ export default class Page extends Component {
             </div>
           </div>
         ))}
+        </div>
       </main>
     );
   }

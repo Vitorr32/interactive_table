@@ -8,7 +8,7 @@ export default class Filter extends Component {
 
         this.state = {
             selected: []
-        }
+        };
     }
 
     toogleSelection(selection) {
@@ -33,7 +33,12 @@ export default class Filter extends Component {
             <div className={`filter_wrapper ${this.state.selected.length !== 0 ? 'hasSelection' : ''}`}>
                 {
                     this.props.content.map(content => {
-                        return <button key={content} onClick={() => this.toogleSelection(content)}>{content}</button>
+                        return (
+                            <div key={content.title} className="div" onClick={() => this.toogleSelection(content.title)}>
+                                <img src={content.img} alt="botão"/>
+                                <span>{content.title}</span>
+                            </div>
+                        )
                     })
                 }
             </div>

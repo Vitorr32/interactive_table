@@ -1,11 +1,11 @@
 main {
   text-align: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 main > .title {
-  width: 100%;
+  width: 25%;
   text-align: left;
   padding: 30px;
   margin-top: 50px;
@@ -16,10 +16,10 @@ main > .title {
 }
 
 main > .table_wrapper {
-  width: 100%;
+  width: 60%;
   min-height: 400px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
 main > .table_wrapper + .table_wrapper {
@@ -28,8 +28,8 @@ main > .table_wrapper + .table_wrapper {
 }
 
 main > .table_wrapper > .title {
-  width: 100%;
-  background: rebeccapurple;
+  width: 60%;
+  background-color: rebeccapurple;
   padding: 15px;
   color: whitesmoke;
   text-align: center;
@@ -44,8 +44,67 @@ main > .table_wrapper > .title {
 
 main > .table_wrapper > .table {
   position: relative;
-  width: 100%;
+  width: 60%;
   display: flex;
   flex: 1;
+  margin-bottom: 60%;
+  top: 30px;
 }
 
+h1 {
+  font-family: "Proxima Nova Bold";
+  font-size: 50px;
+  align-content: center;
+  position: relative;
+  padding-top: 160px;
+  margin-left: 80px;
+  margin-right: 220px;
+  margin-bottom: 0px;
+  }
+
+h2{
+  font-family: Proxima Nova Regular;
+  font-size: 20px;
+  position: relative;
+  margin-left: 200px;
+  margin-top: 40px;
+  text-align: justify;
+  letter-spacing: 5px;
+  }
+
+p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  margin-left: 80px;
+  margin-right: 100px;
+  margin-top: 30px;
+  text-align: justify;
+  font-style: italic;
+}
+
+.lado-cor-caracteristica {
+  width: 40%;
+  height: 100vh;
+  position: relative;
+  background-color: #fabd02;
+  text-align: right;
+}
+
+.tabelissima{
+  width: 60%;
+  height: 100vh;
+  position: absolute;
+  left: 40%;
+  top:10%;
+  background-color: rgb(255, 253, 253);
+}
+
+.fonte-definicao {
+  font-family: Proxima Nova Regular;
+  font-size: 15px;
+  position: relative;
+  margin-left: 80px;
+  margin-top: 10px;
+  text-align: justify;
+  letter-spacing: 3px;
+  }

@@ -2,8 +2,8 @@
   flex: 1;
   padding: 20px 40px;
   overflow: auto;
-  border-right: 1px solid #cacaca;
-  border-bottom: 1px solid #cacaca;
+  border-right: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
   border-bottom-right-radius: 13px;
   position: absolute;
   width: calc(100% - 250px);
@@ -18,13 +18,13 @@
 .content_wrapper > .content > .title {
   margin: 10px auto 20px auto;
   font-size: 30px;
-  font-family: ProximaNova-Bold;
+  font-family: "Proxima Nova Bold";
   text-align: left;
-  color: rebeccapurple;
 }
 
 .content_wrapper > .content > .text {
   color: rgb(99, 99, 99);
   text-align: left;
   margin-top: 0px;
+  white-space: pre;
 }
