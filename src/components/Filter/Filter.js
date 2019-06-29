@@ -25,7 +25,7 @@ export default class Filter extends Component {
 
         this.setState({ selected: selections });
 
-        this.props.onSelectionChange(selections);
+        this.props.onChangeFilter(selections);
     }
 
     render() {
@@ -34,8 +34,11 @@ export default class Filter extends Component {
                 {
                     this.props.content.map(content => {
                         return (
-                            <div key={content.title} className="div" onClick={() => this.toogleSelection(content.title)}>
-                                <img src={content.img} alt="botão"/>
+                            <div
+                                key={content.title}
+                                className="filter_toogle"
+                                onClick={() => this.toogleSelection(content.title)}>
+                                <img src={content.img} alt="botão" />
                                 <span>{content.title}</span>
                             </div>
                         )

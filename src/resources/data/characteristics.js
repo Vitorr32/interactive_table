@@ -11,16 +11,12 @@ const characteristics = [
     {
         //Characteristic name
         label: 'USABILITY',
-        //Background color
-        color: 'whitesmoke',
         definition: '"Measure in which a product can be used by specific users to achieve specific objectives with effectiveness, efficiency and satisfaction in a specific context of use"',
         font: 'ISO 9241-11:2018',
         categories: [
             {
                 //Title or identifier of the category
                 label: 'LERNABILITY',
-                //Category header and label color
-                color: '#fabd02',
                 //Sub categories are objects each containing a label and the content
                 sub_categories: [
                     {
@@ -194,7 +190,7 @@ const characteristics = [
                             {
                                 title: 'Heuristics',
                                 img: image4,
-                                text: '1. Provide/not provide menu button.' 
+                                text: '1. Provide/not provide menu button.'
                             },
                             {
                                 title: 'Metrics',
@@ -239,7 +235,7 @@ const characteristics = [
                             {
                                 title: 'Heuristics',
                                 img: image4,
-                                text: '-' 
+                                text: '-'
                             },
                             {
                                 title: 'Metrics',
@@ -284,7 +280,7 @@ const characteristics = [
                             {
                                 title: 'Heuristics',
                                 img: image4,
-                                text: '-' 
+                                text: '-'
                             },
                             {
                                 title: 'Metrics',
@@ -329,7 +325,7 @@ const characteristics = [
                             {
                                 title: 'Heuristics',
                                 img: image4,
-                                text: '-' 
+                                text: '-'
                             },
                             {
                                 title: 'Metrics',
@@ -397,9 +393,9 @@ const characteristics = [
                                 text: '-'
                             }
                         ]
-                        
+
                     }
-                    
+
                 ]
             },
             {
@@ -433,7 +429,7 @@ const characteristics = [
                             {
                                 title: 'Heuristics',
                                 img: image4,
-                                text: '-' 
+                                text: '-'
                             },
                             {
                                 title: 'Metrics',
@@ -490,7 +486,7 @@ const characteristics = [
                                 img: image6,
                                 text: `1. Font size must be adjustable easily. \n 2. Provide alternative ways to perform gesture-based actions. \n 3. Present canvas amplifier and possibility to limit the maximum zoom, without loss of the characteristics of the canvas configuration (position of icons, etc.). \n 4. Delay of button response can be adjustable (to ensure that multiple touches can be treated as one touch).`
                             },
-                                {
+                            {
                                 title: 'Aspects to Observe Through Evaluation ',
                                 img: image7,
                                 text: '1. Make audio display adjustable easily.'
@@ -568,7 +564,7 @@ const characteristics = [
                             {
                                 title: 'Heuristics',
                                 img: image4,
-                                text: '-' 
+                                text: '-'
                             },
                             {
                                 title: 'Metrics',
@@ -613,7 +609,7 @@ const characteristics = [
                             {
                                 title: 'Heuristics',
                                 img: image4,
-                                text: `1. Provides/ no provides security autorizations for other people to access personal informations. \n 2. Ensures liability of the software product vendors in case of fraudulent use of users’ personal information. \n 3. Provides/no provides confidentiality of user personal data. \n 4. Provides/ no provides terms of use while installation. \n 5. Provides/ no provides alternatives to maintain confidential unlock interaction for the blind. \n 6. Asks permition to access users personal information and mobile functionalities while performing tasks that these are require.` 
+                                text: `1. Provides/ no provides security autorizations for other people to access personal informations. \n 2. Ensures liability of the software product vendors in case of fraudulent use of users’ personal information. \n 3. Provides/no provides confidentiality of user personal data. \n 4. Provides/ no provides terms of use while installation. \n 5. Provides/ no provides alternatives to maintain confidential unlock interaction for the blind. \n 6. Asks permition to access users personal information and mobile functionalities while performing tasks that these are require.`
                             },
                             {
                                 title: 'Metrics',
@@ -636,10 +632,10 @@ const characteristics = [
                                 text: '-'
                             }
                         ]
-                    }  
-                    
+                    }
+
                 ]
-                
+
             },
             {
                 //Title or identifier of the category
@@ -672,7 +668,7 @@ const characteristics = [
                             {
                                 title: 'Heuristics',
                                 img: image4,
-                                text: '1. Displays the issue in a precise way. ' 
+                                text: '1. Displays the issue in a precise way. '
                             },
                             {
                                 title: 'Metrics',
@@ -785,10 +781,10 @@ const characteristics = [
                                 text: '-'
                             }
                         ]
-                    }  
-                    
+                    }
+
                 ]
-                
+
             },
             {
                 //Title or identifier of the category
@@ -821,7 +817,7 @@ const characteristics = [
                             {
                                 title: 'Heuristics',
                                 img: image4,
-                                text: '1. Offers visible objects, actions and options' 
+                                text: '1. Offers visible objects, actions and options'
                             },
                             {
                                 title: 'Metrics',
@@ -844,10 +840,10 @@ const characteristics = [
                                 text: '-'
                             }
                         ]
-                    }  
-                    
+                    }
+
                 ]
-                
+
             },
             {
                 //Title or identifier of the category
@@ -903,26 +899,23 @@ const characteristics = [
                                 text: '-'
                             }
                         ]
-                    }  
-                    
+                    }
+
                 ]
-                
+
             }
         ]
     },
-    
+
     {
         label: 'ACCESSIBILITY',
-         //Background color
-         color: 'whitesmoke',
-         definition: '"Flexibility provided for access to information and interaction, so that users with different needs can access and use these systems"',
-         font: 'Melo, A. M. & Baranauskas C. C.',
+        //Background color
+        definition: '"Flexibility provided for access to information and interaction, so that users with different needs can access and use these systems"',
+        font: 'Melo, A. M. & Baranauskas C. C.',
         categories: [
             {
                 //Title or identifier of the category
                 label: 'PERCEIVABLE',
-                //Category header and label color
-                color: '#fabd02',
                 //Sub categories are objects each containing a label and the content
                 sub_categories: [
                     {
@@ -1345,7 +1338,7 @@ const characteristics = [
                             }
                         ]
                     }
-                    
+
                 ]
             },
             {
@@ -1449,7 +1442,7 @@ const characteristics = [
 
                         ]
                     }
-                    
+
                 ]
             }
         ]

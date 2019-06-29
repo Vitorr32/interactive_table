@@ -1,18 +1,19 @@
 .side_menu {
   display: flex;
   flex-direction: column;
-  min-height: 600px;
 }
 
 .side_menu button {
   width: 150px;
   padding: 10px 10px;
   font-family: "Proxima Nova Regular";
+  background: #fabd02;
   font-size: 20px;
   color: rgb(17, 17, 17);
   flex: 1;
   transition: all 0.3s ease-in-out;
   outline: none;
+  box-sizing: border-box;
 }
 
 .side_menu button.selected {

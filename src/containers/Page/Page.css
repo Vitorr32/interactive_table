@@ -2,6 +2,9 @@ main {
   text-align: center;
   width: 100%;
   margin: 0 auto;
+  flex: 1;
+  display: flex;
+  min-height: 0px;
 }
 
 main > .title {
@@ -15,96 +18,9 @@ main > .title {
   letter-spacing: 3px;
 }
 
-main > .table_wrapper {
-  width: 60%;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column; 
-}
-
-main > .table_wrapper + .table_wrapper {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-main > .table_wrapper > .title {
-  width: 60%;
-  background-color: rebeccapurple;
-  padding: 15px;
-  color: whitesmoke;
-  text-align: center;
-  font-family: "Proxima Nova Light";
-  letter-spacing: 3px;
-  font-size: 1.5em;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-main > .table_wrapper > .table {
-  position: relative;
-  width: 60%;
-  display: flex;
+.tabelissima {
   flex: 1;
-  margin-bottom: 60%;
-  top: 30px;
-}
-
-h1 {
-  font-family: "Proxima Nova Bold";
-  font-size: 50px;
-  align-content: center;
-  position: relative;
-  padding-top: 160px;
-  margin-left: 80px;
-  margin-right: 220px;
-  margin-bottom: 0px;
-  }
-
-h2{
-  font-family: Proxima Nova Regular;
-  font-size: 20px;
-  position: relative;
-  margin-left: 200px;
-  margin-top: 40px;
-  text-align: justify;
-  letter-spacing: 5px;
-  }
-
-p{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  position: relative;
-  margin-left: 80px;
-  margin-right: 100px;
-  margin-top: 30px;
-  text-align: justify;
-  font-style: italic;
-}
-
-.lado-cor-caracteristica {
-  width: 40%;
-  height: 100vh;
-  position: relative;
-  background-color: #fabd02;
-  text-align: right;
-}
-
-.tabelissima{
-  width: 60%;
-  height: 100vh;
-  position: absolute;
-  left: 40%;
-  top:10%;
   background-color: rgb(255, 253, 253);
+  min-width: 0px;
+  overflow: auto;
 }
-
-.fonte-definicao {
-  font-family: Proxima Nova Regular;
-  font-size: 15px;
-  position: relative;
-  margin-left: 80px;
-  margin-top: 10px;
-  text-align: justify;
-  letter-spacing: 3px;
-  }

@@ -1,0 +1,21 @@
+.category {
+  height: calc(100vh - 70px);
+  display: flex;
+  width: 100%;
+}
+
+.category + .category {
+  margin-top: 20px;
+}
+
+.category .title {
+  /*Set title css here*/
+}
+
+.category .category_content {
+  flex: 1;
+  position: relative;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+}

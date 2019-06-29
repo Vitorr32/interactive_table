@@ -1,0 +1,47 @@
+#characteristic {
+  width: 40%;
+  position: relative;
+  background-color: #fabd02;
+  text-align: right;
+}
+
+#characteristic h1 {
+  font-family: "Proxima Nova Bold";
+  font-size: 50px;
+  align-content: center;
+  position: relative;
+  padding-top: 160px;
+  margin-left: 80px;
+  margin-right: 220px;
+  margin-bottom: 0px;
+}
+
+#characteristic h2 {
+  font-family: Proxima Nova Regular;
+  font-size: 20px;
+  position: relative;
+  margin-left: 200px;
+  margin-top: 40px;
+  text-align: justify;
+  letter-spacing: 5px;
+}
+
+#characteristic p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  margin-left: 80px;
+  margin-right: 100px;
+  margin-top: 30px;
+  text-align: justify;
+  font-style: italic;
+}
+
+.font_definition {
+  font-family: Proxima Nova Regular;
+  font-size: 15px;
+  position: relative;
+  margin-left: 80px;
+  margin-top: 10px;
+  text-align: justify;
+  letter-spacing: 3px;
+}

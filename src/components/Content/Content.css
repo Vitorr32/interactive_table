@@ -1,18 +1,13 @@
 .content_wrapper {
+  min-height: 0px;
   flex: 1;
-  padding: 20px 40px;
-  overflow: auto;
-  border-right: 1px solid #dbdbdb;
-  border-bottom: 1px solid #dbdbdb;
+  padding: 10px 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
   border-bottom-right-radius: 13px;
-  position: absolute;
-  width: calc(100% - 250px);
-  left: 250px;
-  height: 100%;
-}
-
-.content_wrapper .content + .content {
-  margin-top: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15%;
 }
 
 .content_wrapper > .content > .title {
@@ -26,5 +21,5 @@
   color: rgb(99, 99, 99);
   text-align: left;
   margin-top: 0px;
-  white-space: pre;
+  white-space: pre-line;
 }

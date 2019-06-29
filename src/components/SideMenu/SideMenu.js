@@ -1,22 +1,15 @@
-/** @jsx jsx */
-import { css, jsx } from '@emotion/core'
+import React from 'react';
 
 import './SideMenu.css';
 
-export default ({ category, color, sub_categories, selected, callback }) => (
+export default ({ sub_categories, selected, callback }) => (
     <div className="side_menu">
         {
-            sub_categories.map((sub_category, index) => (
+            sub_categories.map(sub_category => (
                 <button
                     className={selected === sub_category ? 'selected' : ''}
                     key={sub_category.label}
-                    css={css`
-                        background-color: ${color};
-                            &.selected {
-                            color: ${color};
-                            }
-                        `}
-                    onClick={() => callback(category, index)}>
+                    onClick={() => callback(sub_category)}>
                     {sub_category.label}
                 </button>
             ))
