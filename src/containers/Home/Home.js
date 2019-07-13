@@ -12,10 +12,7 @@ export default class Home extends Component {
         <h1>The good design</h1>
         <h2>for all.</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Donec sodales, metus at fermentum pellentesque, tortor risus
-          dapibus neque, et tempor dolor sapien quis eros. Aliquam porttitor
-          rhoncus enim. In porttitor iaculis sem.
+        A simple and intuitive interactive catalog for designers and developers to design interfaces for usable accessibility.
         </p>
         </div>
       </div>

@@ -17,13 +17,13 @@
 }
 
 #characteristic h2 {
-  font-family: Proxima Nova Regular;
-  font-size: 20px;
+  font-family: "Proxima Nova Regular";
+  font-size: 15px;
   position: relative;
-  margin-left: 200px;
-  margin-top: 40px;
+  margin-left: 80px;
+  margin-top: 10px;
   text-align: justify;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 #characteristic p {
@@ -37,11 +37,5 @@
 }
 
 .font_definition {
-  font-family: Proxima Nova Regular;
-  font-size: 15px;
-  position: relative;
-  margin-left: 80px;
-  margin-top: 10px;
-  text-align: justify;
-  letter-spacing: 3px;
+
 }

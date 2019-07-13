@@ -24,3 +24,7 @@ main > .title {
   min-width: 0px;
   overflow: auto;
 }
+
+.font{
+  margin-left: 70px; 
+}

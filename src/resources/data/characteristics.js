@@ -116,14 +116,14 @@ const characteristics = [
                         label: 'Familiariarity',
                         content: [
                             {
-                                title: `1. Use the appearance that the user has a chance of recognising from previous use. \n 2. Rely on recognition of function choices instead of memorization of commands`,
+                                title: 'Guidelines',
                                 img: image,
-                                text: 'Conteudo 1'
+                                text: `1. Use the appearance that the user has a chance of recognising from previous use. \n 2. Rely on recognition of function choices instead of memorization of commands`,
                             },
                             {
-                                title: `1. Locate login button on the top of the screen \n 2. Use standard, easy, identifiable and visible icons \n 3. Real-word metaphors`,
+                                title: 'Design Recommendations',
                                 img: image2,
-                                text: 'Conteudo 2'
+                                text: `1. Locate login button on the top of the screen \n 2. Use standard, easy, identifiable and visible icons \n 3. Real-word metaphors`,
                             },
                             {
                                 title: 'Development Recommendations',
