@@ -36,10 +36,10 @@ export default class Filter extends Component {
                         return (
                             <div
                                 key={content.title}
-                                className="filter_toogle"
+                                className={`filter_toogle ${this.state.selected.includes(content.title) ? 'selected' : ''}`}
                                 onClick={() => this.toogleSelection(content.title)}>
-                                <img src={content.img} alt="botão" />
                                 <span>{content.title}</span>
+                                <img src={content.img} alt={content.title} />
                             </div>
                         )
                     })
