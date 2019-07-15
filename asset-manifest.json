@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/interactive_table/static/css/main.6d361644.chunk.css",
-    "main.js": "/interactive_table/static/js/main.1e0f1c4e.chunk.js",
-    "main.js.map": "/interactive_table/static/js/main.1e0f1c4e.chunk.js.map",
+    "main.js": "/interactive_table/static/js/main.daffff67.chunk.js",
+    "main.js.map": "/interactive_table/static/js/main.daffff67.chunk.js.map",
     "runtime~main.js": "/interactive_table/static/js/runtime~main.76204184.js",
     "runtime~main.js.map": "/interactive_table/static/js/runtime~main.76204184.js.map",
-    "static/js/2.26d4521a.chunk.js": "/interactive_table/static/js/2.26d4521a.chunk.js",
-    "static/js/2.26d4521a.chunk.js.map": "/interactive_table/static/js/2.26d4521a.chunk.js.map",
+    "static/js/2.0b4407ee.chunk.js": "/interactive_table/static/js/2.0b4407ee.chunk.js",
+    "static/js/2.0b4407ee.chunk.js.map": "/interactive_table/static/js/2.0b4407ee.chunk.js.map",
     "index.html": "/interactive_table/index.html",
-    "precache-manifest.8f491c980707f0d76806a32da8053713.js": "/interactive_table/precache-manifest.8f491c980707f0d76806a32da8053713.js",
+    "precache-manifest.a9a2f8078c2eac9d22ebff08795c70b4.js": "/interactive_table/precache-manifest.a9a2f8078c2eac9d22ebff08795c70b4.js",
     "service-worker.js": "/interactive_table/service-worker.js",
     "static/css/main.6d361644.chunk.css.map": "/interactive_table/static/css/main.6d361644.chunk.css.map",
     "static/media/index.css": "/interactive_table/static/media/ProximaNovaT-Thin.29510bc2.woff"
