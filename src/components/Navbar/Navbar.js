@@ -3,7 +3,10 @@ import React from "react";
 import Logo from '../../resources/images/logo-4all-black.png'
 
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from 'react-router-dom';
 import { Nav } from "react-bootstrap";
+
+import './Navbar.css';
 
 export default ({ characteristics }) => (
   <Navbar bg="light" variaton="light">
@@ -17,12 +20,12 @@ export default ({ characteristics }) => (
       />
     </Navbar.Brand>
     <Nav className="ml-auto">
-      <Nav.Link className="hvr-underline-from-left" href="/home">ABOUT</Nav.Link>
+      <Link to={'/home'} className="link hvr-underline-from-left">ABOUT</Link>
       {/* Each characteristic will generate a link to it  */}
       {characteristics.map(characteristic => (
-        <Nav.Link className="hvr-underline-from-left" key={characteristic.label} href={`/${characteristic.label}`}>
+        <Link className="link hvr-underline-from-left" key={characteristic.label} to={`/${characteristic.label}`}>
           {characteristic.label}
-        </Nav.Link>
+        </Link>
       ))}
     </Nav>
   </Navbar>
